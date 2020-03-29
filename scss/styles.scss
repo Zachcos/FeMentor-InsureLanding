@@ -5,3 +5,13 @@ $veryDarkViolet: hsl(270, 9%, 17%);
 $darkGreyishViolet: hsl(273, 4%, 51%);
 $veryLighGrey: hsl(0, 0%, 98%);
 /* End Color Variables*/
+
+/* Font Mixin and Variables */
+$DMSerif: "DM Serif Display", serif;
+$Karla: "Karla", sans-serif;
+
+@mixin font($family, $weight) {
+  font-family: $family;
+  font-weight: $weight;
+}
+/* End Font Mixin and Variables */
