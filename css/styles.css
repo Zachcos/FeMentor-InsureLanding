@@ -163,11 +163,11 @@ table {
 #topBar nav li {
   font-family: "Karla", sans-serif;
   font-weight: 700;
+  color: #837d87;
   display: inline;
   font-size: 0.8rem;
   letter-spacing: 2px;
   text-transform: uppercase;
-  color: #837d87;
 }
 #topBar nav li:last-child {
   border: 2px solid #2b272f;

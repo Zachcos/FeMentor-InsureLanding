@@ -45,11 +45,11 @@ $Karla: "Karla", sans-serif;
     width: 40%;
     li {
       @include font($Karla, 700);
+      color: $darkGreyishViolet;
       display: inline;
       font-size: 0.8rem;
       letter-spacing: 2px;
       text-transform: uppercase;
-      color: $darkGreyishViolet;
       &:last-child {
         border: 2px solid $veryDarkViolet;
         color: $veryDarkViolet;
