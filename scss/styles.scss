@@ -142,7 +142,29 @@ $Karla: "Karla", sans-serif;
       color: $darkViolet;
       font-size: 4.5rem;
       line-height: 4.1rem;
-      padding: 65px 0 30px;
+      padding: 65px 0 95px;
+    }
+    .item__container {
+      display: flex;
+      width: 100%;
+      .item {
+        width: 31%;
+        margin-right: 3.5%;
+        &:last-child {
+          margin-right: 0;
+        }
+        h2 {
+          @include font($DMSerif, 400);
+          color: $veryDarkViolet;
+          font-size: 1.7rem;
+          padding: 35px 0 25px;
+        }
+        p {
+          @include font($Karla, 400);
+          color: $darkGreyishViolet;
+          line-height: 1.55rem;
+        }
+      }
     }
   }
 }

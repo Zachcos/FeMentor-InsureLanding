@@ -261,7 +261,31 @@ table {
   color: #2d2640;
   font-size: 4.5rem;
   line-height: 4.1rem;
-  padding: 65px 0 30px;
+  padding: 65px 0 95px;
+}
+#different .container .item__container {
+  display: flex;
+  width: 100%;
+}
+#different .container .item__container .item {
+  width: 31%;
+  margin-right: 3.5%;
+}
+#different .container .item__container .item:last-child {
+  margin-right: 0;
+}
+#different .container .item__container .item h2 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  color: #2b272f;
+  font-size: 1.7rem;
+  padding: 35px 0 25px;
+}
+#different .container .item__container .item p {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  color: #837d87;
+  line-height: 1.55rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
