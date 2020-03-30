@@ -190,6 +190,7 @@ table {
   z-index: 1;
 }
 #cta .container {
+  display: flex;
   padding-top: 105px;
 }
 #cta .container:before {
@@ -198,6 +199,13 @@ table {
   height: 3px;
   position: absolute;
   width: 150px;
+}
+#cta .container .cta__text {
+  padding-right: 2%;
+  width: 50%;
+}
+#cta .container .cta__image {
+  width: 40%;
 }
 
 /*# sourceMappingURL=styles.css.map */

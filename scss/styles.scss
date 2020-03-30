@@ -73,6 +73,7 @@ $Karla: "Karla", sans-serif;
     z-index: 1;
   }
   .container {
+    display: flex;
     padding-top: 105px;
     &:before {
       border-top: 1px solid $veryLightGrey;
@@ -80,6 +81,13 @@ $Karla: "Karla", sans-serif;
       height: 3px;
       position: absolute;
       width: 150px;
+    }
+    .cta__text {
+      padding-right: 2%;
+      width: 50%;
+    }
+    .cta__image {
+      width: 40%;
     }
   }
 }
