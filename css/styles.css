@@ -204,6 +204,37 @@ table {
   padding-right: 2%;
   width: 50%;
 }
+#cta .container .cta__text h1 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  color: #fafafa;
+  font-size: 4.5rem;
+  line-height: 4.1rem;
+  padding: 65px 0 30px;
+}
+#cta .container .cta__text p,
+#cta .container .cta__text a {
+  color: #fafafa;
+  opacity: 0.7;
+}
+#cta .container .cta__text p {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
+  line-height: 1.7rem;
+}
+#cta .container .cta__text .cta__btn {
+  text-transform: uppercase;
+  margin-top: 40px;
+}
+#cta .container .cta__text .cta__btn a {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  border: 2px solid #fafafa;
+  font-size: 0.8rem;
+  letter-spacing: 2px;
+  padding: 12px 26px;
+  text-decoration: none;
+}
 #cta .container .cta__image {
   width: 40%;
 }

@@ -86,6 +86,34 @@ $Karla: "Karla", sans-serif;
     .cta__text {
       padding-right: 2%;
       width: 50%;
+      h1 {
+        @include font($DMSerif, 400);
+        color: $veryLightGrey;
+        font-size: 4.5rem;
+        line-height: 4.1rem;
+        padding: 65px 0 30px;
+      }
+      p,
+      a {
+        color: $veryLightGrey;
+        opacity: 0.7;
+      }
+      p {
+        @include font($Karla, 400);
+        line-height: 1.7rem;
+      }
+      .cta__btn {
+        text-transform: uppercase;
+        margin-top: 40px;
+        a {
+          @include font($Karla, 700);
+          border: 2px solid $veryLightGrey;
+          font-size: 0.8rem;
+          letter-spacing: 2px;
+          padding: 12px 26px;
+          text-decoration: none;
+        }
+      }
     }
     .cta__image {
       width: 40%;
