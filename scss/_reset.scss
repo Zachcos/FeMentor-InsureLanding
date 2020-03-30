@@ -86,7 +86,6 @@ video {
   font: inherit;
   vertical-align: baseline;
 }
-
 /* HTML5 display-role reset for older browsers */
 article,
 aside,
@@ -101,21 +100,17 @@ nav,
 section {
   display: block;
 }
-
 body {
   line-height: 1;
 }
-
 ol,
 ul {
   list-style: none;
 }
-
 blockquote,
 q {
   quotes: none;
 }
-
 blockquote:before,
 blockquote:after,
 q:before,
@@ -123,55 +118,7 @@ q:after {
   content: "";
   content: none;
 }
-
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
-/* Color Variables */
-/* End Color Variables*/
-/* Font Mixin and Variables */
-/* End Font Mixin and Variables */
-.container {
-  height: 100%;
-  margin: 0 auto;
-  max-width: 1440px;
-  width: 75%;
-}
-
-#topBar {
-  height: 80px;
-  margin: 0;
-  padding: 0;
-}
-#topBar .container {
-  align-items: center;
-  display: flex;
-}
-#topBar .imgContainer {
-  margin-right: auto;
-  width: 20%;
-}
-#topBar nav {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  width: 40%;
-}
-#topBar nav li {
-  font-family: "Karla", sans-serif;
-  font-weight: 700;
-  display: inline;
-  font-size: 0.7rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: #837d87;
-}
-#topBar nav li:last-child {
-  border: 2px solid #2b272f;
-  padding: 10px 15px;
-}
-
-/*# sourceMappingURL=styles.css.map */
