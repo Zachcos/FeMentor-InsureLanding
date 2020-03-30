@@ -22,7 +22,7 @@ $Karla: "Karla", sans-serif;
   height: 100%;
   margin: 0 auto;
   max-width: 1440px;
-  width: 75%;
+  width: 77%;
 }
 
 #topBar {
@@ -46,13 +46,14 @@ $Karla: "Karla", sans-serif;
     li {
       @include font($Karla, 700);
       display: inline;
-      font-size: 0.7rem;
+      font-size: 0.8rem;
       letter-spacing: 2px;
       text-transform: uppercase;
       color: $darkGreyishViolet;
       &:last-child {
         border: 2px solid $veryDarkViolet;
-        padding: 10px 15px;
+        color: $veryDarkViolet;
+        padding: 12px 25px;
       }
     }
   }

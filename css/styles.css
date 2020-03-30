@@ -137,7 +137,7 @@ table {
   height: 100%;
   margin: 0 auto;
   max-width: 1440px;
-  width: 75%;
+  width: 77%;
 }
 
 #topBar {
@@ -164,14 +164,15 @@ table {
   font-family: "Karla", sans-serif;
   font-weight: 700;
   display: inline;
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: #837d87;
 }
 #topBar nav li:last-child {
   border: 2px solid #2b272f;
-  padding: 10px 15px;
+  color: #2b272f;
+  padding: 12px 25px;
 }
 
 /*# sourceMappingURL=styles.css.map */
