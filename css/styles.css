@@ -179,6 +179,7 @@ table {
 #cta {
   background: #2d2640;
   height: 600px;
+  margin-bottom: 300px;
   position: relative;
   width: 100%;
   z-index: -1;
@@ -188,6 +189,11 @@ table {
   top: -80px;
   right: 0;
   z-index: 1;
+}
+#cta .pattern__left {
+  position: absolute;
+  bottom: -335px;
+  left: 0;
 }
 #cta .container {
   display: flex;

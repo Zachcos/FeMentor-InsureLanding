@@ -64,6 +64,7 @@ $Karla: "Karla", sans-serif;
 #cta {
   background: $darkViolet;
   height: 600px;
+  margin-bottom: 300px;
   position: relative;
   width: 100%;
   z-index: -1;
@@ -72,6 +73,11 @@ $Karla: "Karla", sans-serif;
     top: -80px;
     right: 0;
     z-index: 1;
+  }
+  .pattern__left {
+    position: absolute;
+    bottom: -335px;
+    left: 0;
   }
   .container {
     display: flex;
