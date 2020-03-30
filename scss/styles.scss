@@ -26,6 +26,7 @@ $Karla: "Karla", sans-serif;
 }
 
 #topBar {
+  background: #fff;
   height: 80px;
   margin: 0;
   padding: 0;
@@ -56,5 +57,19 @@ $Karla: "Karla", sans-serif;
         padding: 12px 25px;
       }
     }
+  }
+}
+
+#cta {
+  background: $darkViolet;
+  height: 600px;
+  position: relative;
+  width: 100%;
+  z-index: -1;
+  .pattern__right {
+    position: absolute;
+    top: -80px;
+    right: 0;
+    z-index: 1;
   }
 }

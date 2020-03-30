@@ -141,6 +141,7 @@ table {
 }
 
 #topBar {
+  background: #fff;
   height: 80px;
   margin: 0;
   padding: 0;
@@ -173,6 +174,20 @@ table {
   border: 2px solid #2b272f;
   color: #2b272f;
   padding: 12px 25px;
+}
+
+#cta {
+  background: #312640;
+  height: 600px;
+  position: relative;
+  width: 100%;
+  z-index: -1;
+}
+#cta .pattern__right {
+  position: absolute;
+  top: -80px;
+  right: 0;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=styles.css.map */
