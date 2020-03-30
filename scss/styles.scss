@@ -126,3 +126,16 @@ $Karla: "Karla", sans-serif;
     }
   }
 }
+
+#different {
+  width: 100%;
+  .container {
+    &:before {
+      border-top: 1px solid $darkGreyishViolet;
+      content: "";
+      height: 3px;
+      position: absolute;
+      width: 150px;
+    }
+  }
+}
