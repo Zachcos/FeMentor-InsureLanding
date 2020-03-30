@@ -255,5 +255,13 @@ table {
   position: absolute;
   width: 150px;
 }
+#different .container h1 {
+  font-family: "DM Serif Display", serif;
+  font-weight: 400;
+  color: #2d2640;
+  font-size: 4.5rem;
+  line-height: 4.1rem;
+  padding: 65px 0 30px;
+}
 
 /*# sourceMappingURL=styles.css.map */

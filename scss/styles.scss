@@ -137,5 +137,12 @@ $Karla: "Karla", sans-serif;
       position: absolute;
       width: 150px;
     }
+    h1 {
+      @include font($DMSerif, 400);
+      color: $darkViolet;
+      font-size: 4.5rem;
+      line-height: 4.1rem;
+      padding: 65px 0 30px;
+    }
   }
 }
