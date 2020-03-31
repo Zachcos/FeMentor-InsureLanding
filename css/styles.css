@@ -362,5 +362,29 @@ table {
   justify-content: space-between;
   width: 150px;
 }
+#footer .footer__bottom {
+  margin-top: 40px;
+}
+#footer .footer__bottom .container {
+  display: flex;
+}
+#footer .footer__bottom-vertList {
+  width: 25%;
+  z-index: 5;
+}
+#footer .footer__bottom-vertList li {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  list-style: none;
+  line-height: 1.85rem;
+  color: #2d2640;
+}
+#footer .footer__bottom-vertList li:first-child {
+  color: #837d87;
+  padding-bottom: 25px;
+}
 
 /*# sourceMappingURL=styles.css.map */

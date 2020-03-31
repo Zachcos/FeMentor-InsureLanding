@@ -241,4 +241,27 @@ $Karla: "Karla", sans-serif;
       }
     }
   }
+  .footer__bottom {
+    margin-top: 40px;
+    .container {
+      display: flex;
+    }
+    &-vertList {
+      width: 25%;
+      z-index: 5;
+      li {
+        @include font($Karla, 700);
+        font-size: 0.85rem;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        list-style: none;
+        line-height: 1.85rem;
+        color: $darkViolet;
+        &:first-child {
+          color: $darkGreyishViolet;
+          padding-bottom: 25px;
+        }
+      }
+    }
+  }
 }
