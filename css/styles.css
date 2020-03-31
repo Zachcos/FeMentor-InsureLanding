@@ -390,6 +390,7 @@ table {
   width: 25%;
   z-index: 5;
 }
+#footer .footer__bottom-vertList h5,
 #footer .footer__bottom-vertList li {
   font-family: "Karla", sans-serif;
   font-weight: 700;
@@ -400,7 +401,10 @@ table {
   line-height: 1.85rem;
   color: #2d2640;
 }
-#footer .footer__bottom-vertList li:first-child {
+#footer .footer__bottom-vertList li:hover {
+  text-decoration: underline;
+}
+#footer .footer__bottom-vertList h5 {
   color: #837d87;
   padding-bottom: 25px;
 }

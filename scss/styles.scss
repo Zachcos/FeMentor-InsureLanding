@@ -267,6 +267,7 @@ $Karla: "Karla", sans-serif;
     &-vertList {
       width: 25%;
       z-index: 5;
+      h5,
       li {
         @include font($Karla, 700);
         font-size: 0.85rem;
@@ -275,10 +276,13 @@ $Karla: "Karla", sans-serif;
         list-style: none;
         line-height: 1.85rem;
         color: $darkViolet;
-        &:first-child {
-          color: $darkGreyishViolet;
-          padding-bottom: 25px;
-        }
+      }
+      li:hover {
+        text-decoration: underline;
+      }
+      h5 {
+        color: $darkGreyishViolet;
+        padding-bottom: 25px;
       }
     }
   }
