@@ -1,14 +1,12 @@
 @import "reset";
 
-/* Color Variables */
+/* Variables and Mixins */
 $darkViolet: hsl(256, 26%, 20%);
 $grayishBlue: hsl(216, 30%, 68%);
 $veryDarkViolet: hsl(270, 9%, 17%);
 $darkGreyishViolet: hsl(273, 4%, 51%);
 $veryLightGrey: hsl(0, 0%, 98%);
-/* End Color Variables*/
 
-/* Font Mixin and Variables */
 $DMSerif: "DM Serif Display", serif;
 $Karla: "Karla", sans-serif;
 
@@ -16,7 +14,17 @@ $Karla: "Karla", sans-serif;
   font-family: $family;
   font-weight: $weight;
 }
-/* End Font Mixin and Variables */
+
+@mixin accent($color) {
+  &:before {
+    background: $color;
+    content: "";
+    height: 1px;
+    position: absolute;
+    width: 150px;
+  }
+}
+/* End Variables and Mixins */
 
 .container {
   height: 100%;
@@ -91,13 +99,7 @@ $Karla: "Karla", sans-serif;
   .container {
     display: flex;
     padding-top: 105px;
-    &:before {
-      border-top: 1px solid $veryLightGrey;
-      content: "";
-      height: 3px;
-      position: absolute;
-      width: 150px;
-    }
+    @include accent($veryLightGrey);
     .cta__text {
       padding-right: 2%;
       width: 50%;
@@ -145,14 +147,7 @@ $Karla: "Karla", sans-serif;
   height: 100%;
 
   .container {
-    &:before {
-      border-top: 1px solid $darkViolet;
-      content: "";
-      height: 3px;
-      opacity: 0.5;
-      position: absolute;
-      width: 150px;
-    }
+    @include accent($darkViolet);
     h1 {
       @include font($DMSerif, 400);
       color: $darkViolet;

@@ -129,10 +129,8 @@ table {
   border-spacing: 0;
 }
 
-/* Color Variables */
-/* End Color Variables*/
-/* Font Mixin and Variables */
-/* End Font Mixin and Variables */
+/* Variables and Mixins */
+/* End Variables and Mixins */
 .container {
   height: 100%;
   margin: 0 auto;
@@ -209,9 +207,9 @@ table {
   padding-top: 105px;
 }
 #cta .container:before {
-  border-top: 1px solid #fafafa;
+  background: #fafafa;
   content: "";
-  height: 3px;
+  height: 1px;
   position: absolute;
   width: 150px;
 }
@@ -263,10 +261,9 @@ table {
   height: 100%;
 }
 #different .container:before {
-  border-top: 1px solid #2d2640;
+  background: #2d2640;
   content: "";
-  height: 3px;
-  opacity: 0.5;
+  height: 1px;
   position: absolute;
   width: 150px;
 }
