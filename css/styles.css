@@ -343,6 +343,10 @@ table {
   text-transform: uppercase;
   z-index: 5;
 }
+#howWeWorkBanner .container .banner__inner a:hover {
+  background: #fafafa;
+  color: #2b272f;
+}
 
 #footer {
   background: #fafafa;
@@ -372,6 +376,9 @@ table {
   display: flex;
   justify-content: space-between;
   width: 150px;
+}
+#footer .footer__top .container .footer__top-social svg:hover path {
+  fill: #2b272f;
 }
 #footer .footer__bottom {
   margin-top: 40px;

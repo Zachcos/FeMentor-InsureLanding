@@ -219,6 +219,10 @@ $Karla: "Karla", sans-serif;
         text-decoration: none;
         text-transform: uppercase;
         z-index: 5;
+        &:hover {
+          background: $veryLightGrey;
+          color: $veryDarkViolet;
+        }
       }
     }
   }
@@ -249,6 +253,9 @@ $Karla: "Karla", sans-serif;
         display: flex;
         justify-content: space-between;
         width: 150px;
+        svg:hover path {
+          fill: $veryDarkViolet;
+        }
       }
     }
   }
