@@ -170,10 +170,17 @@ table {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+#topBar nav li:hover {
+  color: #2b272f;
+}
 #topBar nav li:last-child {
   border: 2px solid #2b272f;
   color: #2b272f;
   padding: 12px 25px;
+}
+#topBar nav li:last-child:hover {
+  background: #2b272f;
+  color: #fafafa;
 }
 
 #cta {

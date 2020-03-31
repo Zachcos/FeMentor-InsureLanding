@@ -52,10 +52,17 @@ $Karla: "Karla", sans-serif;
       font-size: 0.8rem;
       letter-spacing: 2px;
       text-transform: uppercase;
+      &:hover {
+        color: $veryDarkViolet;
+      }
       &:last-child {
         border: 2px solid $veryDarkViolet;
         color: $veryDarkViolet;
         padding: 12px 25px;
+        &:hover {
+          background: $veryDarkViolet;
+          color: $veryLightGrey;
+        }
       }
     }
   }
