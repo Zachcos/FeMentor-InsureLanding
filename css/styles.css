@@ -333,4 +333,34 @@ table {
   z-index: 5;
 }
 
+#footer {
+  background: #fafafa;
+  height: 395px;
+  position: relative;
+  width: 100%;
+}
+#footer .footer__pattern {
+  position: absolute;
+  z-index: 1;
+}
+#footer .footer__top {
+  padding-top: 25px;
+  height: 100px;
+  width: 100%;
+}
+#footer .footer__top .container {
+  align-items: center;
+  border-bottom: 1px solid rgba(131, 125, 135, 0.5);
+  display: flex;
+}
+#footer .footer__top .container .footer__top-logo {
+  margin-right: auto;
+  z-index: 5;
+}
+#footer .footer__top .container .footer__top-social {
+  display: flex;
+  justify-content: space-between;
+  width: 150px;
+}
+
 /*# sourceMappingURL=styles.css.map */
