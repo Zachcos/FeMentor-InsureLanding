@@ -138,6 +138,19 @@ table {
   width: 77%;
 }
 
+h1 {
+  font-size: 4.5rem;
+  line-height: 4.1rem;
+}
+
+h2 {
+  font-size: 3.5rem;
+}
+
+h3 {
+  font-size: 1.7rem;
+}
+
 #topBar {
   background: #fff;
   height: 80px;
@@ -221,8 +234,6 @@ table {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   color: #fafafa;
-  font-size: 4.5rem;
-  line-height: 4.1rem;
   padding: 65px 0 30px;
 }
 #cta .container .cta__text p,
@@ -271,8 +282,6 @@ table {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   color: #2d2640;
-  font-size: 4.5rem;
-  line-height: 4.1rem;
   padding: 65px 0 95px;
 }
 #different .container .item__container {
@@ -286,11 +295,10 @@ table {
 #different .container .item__container .item:last-child {
   margin-right: 0;
 }
-#different .container .item__container .item h2 {
+#different .container .item__container .item h3 {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   color: #2b272f;
-  font-size: 1.7rem;
   padding: 35px 0 25px;
 }
 #different .container .item__container .item p {
@@ -327,7 +335,6 @@ table {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   color: #fafafa;
-  font-size: 3.5rem;
   margin-right: auto;
 }
 #howWeWorkBanner .container .banner__inner a {
