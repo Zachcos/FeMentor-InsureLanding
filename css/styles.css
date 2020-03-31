@@ -145,6 +145,8 @@ table {
   height: 80px;
   margin: 0;
   padding: 0;
+  position: relative;
+  z-index: 50;
 }
 #topBar .container {
   align-items: center;
