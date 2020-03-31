@@ -350,7 +350,7 @@ table {
 }
 #footer .footer__top .container {
   align-items: center;
-  border-bottom: 1px solid rgba(131, 125, 135, 0.5);
+  border-bottom: 1px solid rgba(131, 125, 135, 0.25);
   display: flex;
 }
 #footer .footer__top .container .footer__top-logo {
