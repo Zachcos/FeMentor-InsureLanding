@@ -119,8 +119,6 @@ h3 {
       h1 {
         @include font($DMSerif, 400);
         color: $veryLightGrey;
-        // font-size: 4.5rem;
-        // line-height: 4.1rem;
         padding: 65px 0 30px;
       }
       p,
@@ -163,8 +161,6 @@ h3 {
     h1 {
       @include font($DMSerif, 400);
       color: $darkViolet;
-      // font-size: 4.5rem;
-      // line-height: 4.1rem;
       padding: 65px 0 95px;
     }
     .item__container {
