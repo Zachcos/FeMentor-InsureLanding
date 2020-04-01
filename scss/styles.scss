@@ -47,7 +47,6 @@ h3 {
 }
 
 #topBar {
-  // TODO: Fix topBar spacing on window resize
   background: #fff;
   height: 80px;
   margin: 0;
@@ -68,6 +67,7 @@ h3 {
     justify-content: space-between;
     list-style: none;
     width: 40%;
+    min-width: 425px;
     li {
       @include font($Karla, 700);
       color: $darkGreyishViolet;
