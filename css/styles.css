@@ -341,9 +341,10 @@ p {
   position: relative;
 }
 #howWeWorkBanner .container .banner__pattern {
+  background: url("../images/bg-pattern-how-we-work-desktop.svg") no-repeat right;
+  height: 100%;
   position: absolute;
-  top: 0;
-  right: 0;
+  width: 100%;
   z-index: 1;
 }
 #howWeWorkBanner .container .banner__inner {
