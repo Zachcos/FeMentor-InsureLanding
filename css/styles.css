@@ -246,9 +246,12 @@ p {
   height: 100%;
 }
 #cta .pattern__left {
+  background: url("../images/bg-pattern-intro-left-desktop.svg") no-repeat left;
   position: absolute;
-  bottom: -335px;
+  top: 382px;
   left: 0;
+  width: 100%;
+  height: 100%;
 }
 #cta .container {
   display: flex;
