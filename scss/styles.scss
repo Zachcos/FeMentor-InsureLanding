@@ -136,7 +136,6 @@ p {
         opacity: 0.7;
       }
       p {
-        @include font($Karla, 400);
         line-height: 1.7rem;
       }
       .cta__btn {
@@ -185,7 +184,6 @@ p {
           padding: 35px 0 25px;
         }
         p {
-          @include font($Karla, 400);
           color: $darkGreyishViolet;
           line-height: 1.55rem;
         }

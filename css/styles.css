@@ -253,8 +253,6 @@ p {
   opacity: 0.7;
 }
 #cta .container .cta__text p {
-  font-family: "Karla", sans-serif;
-  font-weight: 400;
   line-height: 1.7rem;
 }
 #cta .container .cta__text .cta__btn {
@@ -309,8 +307,6 @@ p {
   padding: 35px 0 25px;
 }
 #different .container .item__container .item p {
-  font-family: "Karla", sans-serif;
-  font-weight: 400;
   color: #837d87;
   line-height: 1.55rem;
 }
