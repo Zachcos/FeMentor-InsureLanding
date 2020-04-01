@@ -252,10 +252,13 @@ p {
   position: absolute;
   top: 382px;
   width: 100%;
+  z-index: 1;
 }
 #cta .container {
   display: flex;
   padding-top: 105px;
+  position: relative;
+  z-index: 10;
 }
 #cta .container:before {
   background: #fafafa;
