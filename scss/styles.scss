@@ -128,10 +128,13 @@ p {
   width: 100%;
   z-index: 1;
   .pattern__right {
+    background: url("../images/bg-pattern-intro-right-desktop.svg") no-repeat;
     position: absolute;
     top: -80px;
     right: 0;
     z-index: 10;
+    width: 30%;
+    height: 100%;
   }
   .pattern__left {
     position: absolute;
