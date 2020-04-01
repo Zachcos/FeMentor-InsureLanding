@@ -252,7 +252,10 @@ p {
   position: relative;
   width: 100%;
   .footer__pattern {
+    background: url("../images/bg-pattern-footer-desktop.svg") no-repeat;
+    height: 100%;
     position: absolute;
+    width: 100%;
     z-index: 1;
   }
   .footer__top {
