@@ -139,7 +139,8 @@ table {
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
 }
@@ -155,6 +156,11 @@ h2 {
 
 h3 {
   font-size: 1.7rem;
+}
+
+p {
+  font-family: "Karla", sans-serif;
+  font-weight: 400;
 }
 
 #topBar {
@@ -299,8 +305,6 @@ h3 {
   margin-right: 0;
 }
 #different .container .item__container .item h3 {
-  font-family: "DM Serif Display", serif;
-  font-weight: 400;
   color: #2b272f;
   padding: 35px 0 25px;
 }

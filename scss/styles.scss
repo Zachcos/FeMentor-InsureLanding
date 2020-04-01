@@ -34,7 +34,8 @@ $Karla: "Karla", sans-serif;
 }
 
 h1,
-h2 {
+h2,
+h3 {
   @include font($DMSerif, 400);
 }
 
@@ -49,6 +50,10 @@ h2 {
 
 h3 {
   font-size: 1.7rem;
+}
+
+p {
+  @include font($Karla, 400);
 }
 
 #topBar {
@@ -176,7 +181,6 @@ h3 {
           margin-right: 0;
         }
         h3 {
-          @include font($DMSerif, 400);
           color: $veryDarkViolet;
           padding: 35px 0 25px;
         }
