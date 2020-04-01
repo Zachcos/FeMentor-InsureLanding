@@ -138,6 +138,35 @@ table {
   width: 77%;
 }
 
+.button__light,
+.button__dark {
+  font-family: "Karla", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  padding: 12px 26px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button__light {
+  border: 2px solid #fafafa;
+  color: #fafafa !important;
+}
+.button__light:hover {
+  background: #fafafa;
+  color: #2b272f !important;
+}
+
+.button__dark {
+  border: 2px solid #2b272f;
+  color: #2b272f !important;
+}
+.button__dark:hover {
+  background: #2b272f;
+  color: #fafafa !important;
+}
+
 h1,
 h2,
 h3 {
@@ -199,15 +228,6 @@ p {
 #topBar nav li:hover {
   color: #2b272f;
 }
-#topBar nav li:last-child {
-  border: 2px solid #2b272f;
-  color: #2b272f;
-  padding: 12px 25px;
-}
-#topBar nav li:last-child:hover {
-  background: #2b272f;
-  color: #fafafa;
-}
 
 #cta {
   background: #2d2640;
@@ -260,13 +280,7 @@ p {
   margin-top: 40px;
 }
 #cta .container .cta__text .cta__btn a {
-  font-family: "Karla", sans-serif;
-  font-weight: 700;
   border: 2px solid #fafafa;
-  font-size: 0.8rem;
-  letter-spacing: 2px;
-  padding: 12px 26px;
-  text-decoration: none;
 }
 #cta .container .cta__text .cta__btn a:hover {
   background: #fafafa;
@@ -332,29 +346,15 @@ p {
   display: flex;
   height: 100%;
   margin: 0 auto;
+  position: relative;
   width: 85%;
+  z-index: 5;
 }
 #howWeWorkBanner .container .banner__inner h2 {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   color: #fafafa;
   margin-right: auto;
-}
-#howWeWorkBanner .container .banner__inner a {
-  font-family: "Karla", sans-serif;
-  font-weight: 400;
-  border: 2px solid #fafafa;
-  color: #fafafa;
-  font-size: 0.9rem;
-  letter-spacing: 1px;
-  padding: 12px 26px;
-  text-decoration: none;
-  text-transform: uppercase;
-  z-index: 5;
-}
-#howWeWorkBanner .container .banner__inner a:hover {
-  background: #fafafa;
-  color: #2b272f;
 }
 
 #footer {

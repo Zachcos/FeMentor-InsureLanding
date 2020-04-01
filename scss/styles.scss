@@ -33,6 +33,34 @@ $Karla: "Karla", sans-serif;
   width: 77%;
 }
 
+.button__light,
+.button__dark {
+  @include font($Karla, 700);
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  padding: 12px 26px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.button__light {
+  border: 2px solid $veryLightGrey;
+  color: $veryLightGrey !important;
+  &:hover {
+    background: $veryLightGrey;
+    color: $veryDarkViolet !important;
+  }
+}
+
+.button__dark {
+  border: 2px solid $veryDarkViolet;
+  color: $veryDarkViolet !important;
+  &:hover {
+    background: $veryDarkViolet;
+    color: $veryLightGrey !important;
+  }
+}
+
 h1,
 h2,
 h3 {
@@ -88,15 +116,6 @@ p {
       &:hover {
         color: $veryDarkViolet;
       }
-      &:last-child {
-        border: 2px solid $veryDarkViolet;
-        color: $veryDarkViolet;
-        padding: 12px 25px;
-        &:hover {
-          background: $veryDarkViolet;
-          color: $veryLightGrey;
-        }
-      }
     }
   }
 }
@@ -142,12 +161,7 @@ p {
         text-transform: uppercase;
         margin-top: 40px;
         a {
-          @include font($Karla, 700);
           border: 2px solid $veryLightGrey;
-          font-size: 0.8rem;
-          letter-spacing: 2px;
-          padding: 12px 26px;
-          text-decoration: none;
           &:hover {
             background: $veryLightGrey;
             color: $veryDarkViolet;
@@ -211,26 +225,13 @@ p {
       display: flex;
       height: 100%;
       margin: 0 auto;
+      position: relative;
       width: 85%;
+      z-index: 5;
       h2 {
         @include font($DMSerif, 400);
         color: $veryLightGrey;
         margin-right: auto;
-      }
-      a {
-        @include font($Karla, 400);
-        border: 2px solid $veryLightGrey;
-        color: $veryLightGrey;
-        font-size: 0.9rem;
-        letter-spacing: 1px;
-        padding: 12px 26px;
-        text-decoration: none;
-        text-transform: uppercase;
-        z-index: 5;
-        &:hover {
-          background: $veryLightGrey;
-          color: $veryDarkViolet;
-        }
       }
     }
   }
