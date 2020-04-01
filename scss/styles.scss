@@ -150,7 +150,7 @@ p {
     display: flex;
     padding-top: 105px;
     position: relative;
-    z-index: 10;
+    z-index: 103;
     @include accent($veryLightGrey);
     .cta__text {
       padding-right: 2%;
@@ -263,8 +263,10 @@ p {
   }
   .footer__top {
     padding-top: 25px;
+    position: relative;
     height: 100px;
     width: 100%;
+    z-index: 10;
     .container {
       align-items: center;
       border-bottom: 1px solid hsla(273, 4%, 51%, 0.25);
