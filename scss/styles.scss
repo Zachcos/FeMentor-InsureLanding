@@ -10,6 +10,9 @@ $veryLightGrey: hsl(0, 0%, 98%);
 $DMSerif: "DM Serif Display", serif;
 $Karla: "Karla", sans-serif;
 
+$bp_large: 1440px;
+$bp_small: 375px;
+
 @mixin font($family, $weight) {
   font-family: $family;
   font-weight: $weight;
@@ -29,7 +32,7 @@ $Karla: "Karla", sans-serif;
 .container {
   height: 100%;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: $bp_large;
   width: 77%;
 }
 
