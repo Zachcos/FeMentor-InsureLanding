@@ -137,7 +137,7 @@ table {
   max-width: 1440px;
   width: 77%;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
   .container {
     width: 90%;
   }
@@ -183,6 +183,12 @@ h1 {
   font-size: 4.5rem;
   line-height: 4.1rem;
 }
+@media screen and (max-width: 390px) {
+  h1 {
+    font-size: 2.75rem;
+    line-height: 3rem;
+  }
+}
 
 h2 {
   font-size: 3.5rem;
@@ -221,7 +227,7 @@ p {
   width: 40%;
   min-width: 425px;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
   #topBar nav {
     display: none;
   }
@@ -241,7 +247,7 @@ p {
 #topBar .nav__mobileBtn {
   display: none;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
   #topBar .nav__mobileBtn {
     display: block;
   }
@@ -250,10 +256,14 @@ p {
 #cta {
   background: #2d2640;
   height: 600px;
-  margin-bottom: 300px;
   position: relative;
   width: 100%;
   z-index: 1;
+}
+@media screen and (max-width: 390px) {
+  #cta {
+    height: 100%;
+  }
 }
 #cta .pattern__right {
   background: url("../images/bg-pattern-intro-right-desktop.svg") no-repeat right;
@@ -262,6 +272,12 @@ p {
   top: -80px;
   width: 100%;
   z-index: 10;
+}
+@media screen and (max-width: 390px) {
+  #cta .pattern__right {
+    background: url("../images/bg-pattern-intro-left-mobile.svg") no-repeat left;
+    top: 55px;
+  }
 }
 #cta .pattern__left {
   background: url("../images/bg-pattern-intro-left-desktop.svg") no-repeat left;
@@ -272,11 +288,24 @@ p {
   width: 100%;
   z-index: 1;
 }
+@media screen and (max-width: 390px) {
+  #cta .pattern__left {
+    background: url("../images/bg-pattern-intro-right-mobile.svg") no-repeat right;
+    top: 515px;
+  }
+}
 #cta .container {
   display: flex;
   padding-top: 105px;
   position: relative;
   z-index: 103;
+}
+@media screen and (max-width: 390px) {
+  #cta .container {
+    flex-direction: column-reverse;
+    padding-top: 0;
+    width: 100%;
+  }
 }
 #cta .container:before {
   background: #fafafa;
@@ -285,13 +314,30 @@ p {
   position: absolute;
   width: 150px;
 }
+@media screen and (max-width: 390px) {
+  #cta .container:before {
+    display: none;
+  }
+}
 #cta .container .cta__text {
   padding-right: 2%;
   width: 50%;
 }
+@media screen and (max-width: 390px) {
+  #cta .container .cta__text {
+    padding: 80px 0;
+    text-align: center;
+    width: 100%;
+  }
+}
 #cta .container .cta__text h1 {
   color: #fafafa;
   padding: 65px 0 30px;
+}
+@media screen and (max-width: 390px) {
+  #cta .container .cta__text h1 {
+    padding: 20px 0;
+  }
 }
 #cta .container .cta__text p,
 #cta .container .cta__text a {
@@ -300,6 +346,12 @@ p {
 }
 #cta .container .cta__text p {
   line-height: 1.7rem;
+  margin: 0 auto;
+}
+@media screen and (max-width: 390px) {
+  #cta .container .cta__text p {
+    width: 90%;
+  }
 }
 #cta .container .cta__text .cta__btn {
   text-transform: uppercase;
@@ -315,10 +367,30 @@ p {
 #cta .container .cta__image {
   width: 40%;
 }
+@media screen and (max-width: 390px) {
+  #cta .container .cta__image .image__desktop {
+    display: none;
+  }
+}
+#cta .container .cta__image .image__mobile {
+  display: none;
+}
+@media screen and (max-width: 390px) {
+  #cta .container .cta__image .image__mobile {
+    display: block;
+    width: 360px;
+  }
+}
 
 #different {
-  width: 100%;
   height: 100%;
+  margin-top: 300px;
+  width: 100%;
+}
+@media screen and (max-width: 390px) {
+  #different {
+    margin-top: 150px;
+  }
 }
 #different .container:before {
   background: #2d2640;
@@ -326,6 +398,14 @@ p {
   height: 1px;
   position: absolute;
   width: 150px;
+}
+@media screen and (max-width: 390px) {
+  #different .container {
+    text-align: center;
+  }
+  #different .container:before {
+    left: 112.5px;
+  }
 }
 #different .container h1 {
   color: #2d2640;
@@ -335,9 +415,20 @@ p {
   display: flex;
   width: 100%;
 }
+@media screen and (max-width: 390px) {
+  #different .container .item__container {
+    flex-wrap: wrap;
+  }
+}
 #different .container .item__container .item {
   width: 31%;
   margin-right: 3.5%;
+}
+@media screen and (max-width: 390px) {
+  #different .container .item__container .item {
+    width: 100%;
+    margin: 0 0 50px 0;
+  }
 }
 #different .container .item__container .item:last-child {
   margin-right: 0;

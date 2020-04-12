@@ -11,7 +11,7 @@ $DMSerif: "DM Serif Display", serif;
 $Karla: "Karla", sans-serif;
 
 $bp_large: 1440px;
-$bp_small: 375px;
+$bp_small: 390px;
 
 @mixin font($family, $weight) {
   font-family: $family;
@@ -82,6 +82,10 @@ h3 {
 h1 {
   font-size: 4.5rem;
   line-height: 4.1rem;
+  @include mobile {
+    font-size: 2.75rem;
+    line-height: 3rem;
+  }
 }
 
 h2 {
@@ -145,10 +149,12 @@ p {
 #cta {
   background: $darkViolet;
   height: 600px;
-  margin-bottom: 300px;
   position: relative;
   width: 100%;
   z-index: 1;
+  @include mobile {
+    height: 100%;
+  }
   .pattern__right {
     background: url("../images/bg-pattern-intro-right-desktop.svg") no-repeat
       right;
@@ -157,6 +163,11 @@ p {
     top: -80px;
     width: 100%;
     z-index: 10;
+    @include mobile {
+      background: url("../images/bg-pattern-intro-left-mobile.svg") no-repeat
+        left;
+      top: 55px;
+    }
   }
   .pattern__left {
     background: url("../images/bg-pattern-intro-left-desktop.svg") no-repeat
@@ -167,19 +178,42 @@ p {
     top: 382px;
     width: 100%;
     z-index: 1;
+    @include mobile {
+      background: url("../images/bg-pattern-intro-right-mobile.svg") no-repeat
+        right;
+      top: 515px;
+    }
   }
   .container {
     display: flex;
     padding-top: 105px;
     position: relative;
     z-index: 103;
+    @include mobile {
+      flex-direction: column-reverse;
+      padding-top: 0;
+      width: 100%;
+    }
     @include accent($veryLightGrey);
+    @include mobile {
+      &:before {
+        display: none;
+      }
+    }
     .cta__text {
       padding-right: 2%;
       width: 50%;
+      @include mobile {
+        padding: 80px 0;
+        text-align: center;
+        width: 100%;
+      }
       h1 {
         color: $veryLightGrey;
         padding: 65px 0 30px;
+        @include mobile {
+          padding: 20px 0;
+        }
       }
       p,
       a {
@@ -188,6 +222,10 @@ p {
       }
       p {
         line-height: 1.7rem;
+        margin: 0 auto;
+        @include mobile {
+          width: 90%;
+        }
       }
       .cta__btn {
         text-transform: uppercase;
@@ -203,15 +241,37 @@ p {
     }
     .cta__image {
       width: 40%;
+      .image__desktop {
+        @include mobile {
+          display: none;
+        }
+      }
+      .image__mobile {
+        display: none;
+        @include mobile {
+          display: block;
+          width: 360px;
+        }
+      }
     }
   }
 }
 
 #different {
-  width: 100%;
   height: 100%;
+  margin-top: 300px;
+  width: 100%;
+  @include mobile {
+    margin-top: 150px;
+  }
   .container {
     @include accent($darkViolet);
+    @include mobile {
+      text-align: center;
+      &:before {
+        left: 112.5px;
+      }
+    }
     h1 {
       color: $darkViolet;
       padding: 65px 0 95px;
@@ -219,9 +279,16 @@ p {
     .item__container {
       display: flex;
       width: 100%;
+      @include mobile {
+        flex-wrap: wrap;
+      }
       .item {
         width: 31%;
         margin-right: 3.5%;
+        @include mobile {
+          width: 100%;
+          margin: 0 0 50px 0;
+        }
         &:last-child {
           margin-right: 0;
         }
