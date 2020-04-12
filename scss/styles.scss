@@ -35,6 +35,10 @@ $bp_small: 390px;
 }
 /* End Variables and Mixins */
 
+.display__none {
+  display: none;
+}
+
 .container {
   height: 100%;
   margin: 0 auto;
@@ -451,6 +455,47 @@ p {
         color: $darkGreyishViolet;
         padding-bottom: 25px;
       }
+    }
+  }
+}
+
+#mobile-nav {
+  #topBar {
+    position: relative;
+    z-index: 10;
+  }
+  @include mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: $veryDarkViolet;
+    z-index: 1000;
+    nav {
+      position: relative;
+      text-align: center;
+      z-index: 10;
+      li {
+        @include font($Karla, 700);
+        color: $veryLightGrey;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        list-style-type: none;
+        margin: 50px 0;
+        &.button__light {
+          width: 70%;
+          margin: 0 auto;
+        }
+      }
+    }
+    .pattern__mobileNav {
+      position: relative;
+      background: url("../images/bg-pattern-mobile-nav.svg") no-repeat bottom;
+      z-index: 1;
+      height: 100%;
+      width: 100%;
+      bottom: 50%;
     }
   }
 }

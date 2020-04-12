@@ -131,6 +131,10 @@ table {
 
 /* Variables and Mixins */
 /* End Variables and Mixins */
+.display__none {
+  display: none;
+}
+
 .container {
   height: 100%;
   margin: 0 auto;
@@ -616,6 +620,48 @@ p {
 #footer .footer__bottom-vertList h5 {
   color: #837d87;
   padding-bottom: 25px;
+}
+
+#mobile-nav #topBar {
+  position: relative;
+  z-index: 10;
+}
+@media screen and (max-width: 390px) {
+  #mobile-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #2b272f;
+    z-index: 1000;
+  }
+  #mobile-nav nav {
+    position: relative;
+    text-align: center;
+    z-index: 10;
+  }
+  #mobile-nav nav li {
+    font-family: "Karla", sans-serif;
+    font-weight: 700;
+    color: #fafafa;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    list-style-type: none;
+    margin: 50px 0;
+  }
+  #mobile-nav nav li.button__light {
+    width: 70%;
+    margin: 0 auto;
+  }
+  #mobile-nav .pattern__mobileNav {
+    position: relative;
+    background: url("../images/bg-pattern-mobile-nav.svg") no-repeat bottom;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    bottom: 50%;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */
