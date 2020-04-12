@@ -193,6 +193,11 @@ h1 {
 h2 {
   font-size: 3.5rem;
 }
+@media screen and (max-width: 390px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
 
 h3 {
   font-size: 1.7rem;
@@ -447,10 +452,20 @@ p {
   margin: 150px 0;
   width: 100%;
 }
+@media screen and (max-width: 390px) {
+  #howWeWorkBanner {
+    margin: 100px 0 150px;
+  }
+}
 #howWeWorkBanner .container {
   background: #2d2640;
   height: 250px;
   position: relative;
+}
+@media screen and (max-width: 390px) {
+  #howWeWorkBanner .container {
+    height: 100%;
+  }
 }
 #howWeWorkBanner .container .banner__pattern {
   background: url("../images/bg-pattern-how-we-work-desktop.svg") no-repeat right;
@@ -458,6 +473,12 @@ p {
   position: absolute;
   width: 100%;
   z-index: 1;
+}
+@media screen and (max-width: 390px) {
+  #howWeWorkBanner .container .banner__pattern {
+    background: url("../images/bg-pattern-how-we-work-mobile.svg") no-repeat right;
+    height: 88%;
+  }
 }
 #howWeWorkBanner .container .banner__inner {
   align-items: center;
@@ -468,11 +489,27 @@ p {
   width: 85%;
   z-index: 5;
 }
+@media screen and (max-width: 390px) {
+  #howWeWorkBanner .container .banner__inner {
+    flex-direction: column;
+    text-align: center;
+  }
+}
 #howWeWorkBanner .container .banner__inner h2 {
   font-family: "DM Serif Display", serif;
   font-weight: 400;
   color: #fafafa;
   margin-right: auto;
+}
+@media screen and (max-width: 390px) {
+  #howWeWorkBanner .container .banner__inner h2 {
+    padding: 70px 0 50px;
+  }
+}
+@media screen and (max-width: 390px) {
+  #howWeWorkBanner .container .banner__inner a {
+    margin-bottom: 70px;
+  }
 }
 
 #footer {
@@ -481,12 +518,22 @@ p {
   position: relative;
   width: 100%;
 }
+@media screen and (max-width: 390px) {
+  #footer {
+    height: 100%;
+  }
+}
 #footer .footer__pattern {
   background: url("../images/bg-pattern-footer-desktop.svg") no-repeat;
   height: 100%;
   position: absolute;
   width: 100%;
   z-index: 1;
+}
+@media screen and (max-width: 390px) {
+  #footer .footer__pattern {
+    background: url("../images/bg-pattern-footer-mobile.svg") no-repeat;
+  }
 }
 #footer .footer__top {
   padding-top: 25px;
@@ -495,14 +542,29 @@ p {
   width: 100%;
   z-index: 10;
 }
+@media screen and (max-width: 390px) {
+  #footer .footer__top {
+    height: 175px;
+  }
+}
 #footer .footer__top .container {
   align-items: center;
   border-bottom: 1px solid rgba(131, 125, 135, 0.25);
   display: flex;
 }
+@media screen and (max-width: 390px) {
+  #footer .footer__top .container {
+    flex-direction: column;
+  }
+}
 #footer .footer__top .container .footer__top-logo {
   margin-right: auto;
   z-index: 5;
+}
+@media screen and (max-width: 390px) {
+  #footer .footer__top .container .footer__top-logo {
+    margin: 50px 0 25px;
+  }
 }
 #footer .footer__top .container .footer__top-social {
   display: flex;
@@ -518,9 +580,24 @@ p {
 #footer .footer__bottom .container {
   display: flex;
 }
+@media screen and (max-width: 390px) {
+  #footer .footer__bottom .container {
+    flex-direction: column;
+  }
+}
 #footer .footer__bottom-vertList {
   width: 25%;
   z-index: 5;
+}
+@media screen and (max-width: 390px) {
+  #footer .footer__bottom-vertList {
+    margin-bottom: 25px;
+    text-align: center;
+    width: 100%;
+  }
+  #footer .footer__bottom-vertList:last-child {
+    padding-bottom: 50px;
+  }
 }
 #footer .footer__bottom-vertList h5,
 #footer .footer__bottom-vertList li {

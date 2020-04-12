@@ -90,6 +90,9 @@ h1 {
 
 h2 {
   font-size: 3.5rem;
+  @include mobile {
+    font-size: 2.5rem;
+  }
 }
 
 h3 {
@@ -309,10 +312,16 @@ p {
   height: 100%;
   margin: 150px 0;
   width: 100%;
+  @include mobile {
+    margin: 100px 0 150px;
+  }
   .container {
     background: $darkViolet;
     height: 250px;
     position: relative;
+    @include mobile {
+      height: 100%;
+    }
     .banner__pattern {
       background: url("../images/bg-pattern-how-we-work-desktop.svg") no-repeat
         right;
@@ -320,6 +329,11 @@ p {
       position: absolute;
       width: 100%;
       z-index: 1;
+      @include mobile {
+        background: url("../images/bg-pattern-how-we-work-mobile.svg") no-repeat
+          right;
+        height: 88%;
+      }
     }
     .banner__inner {
       align-items: center;
@@ -329,10 +343,22 @@ p {
       position: relative;
       width: 85%;
       z-index: 5;
+      @include mobile {
+        flex-direction: column;
+        text-align: center;
+      }
       h2 {
         @include font($DMSerif, 400);
         color: $veryLightGrey;
         margin-right: auto;
+        @include mobile {
+          padding: 70px 0 50px;
+        }
+      }
+      @include mobile {
+        a {
+          margin-bottom: 70px;
+        }
       }
     }
   }
@@ -343,12 +369,18 @@ p {
   height: 395px;
   position: relative;
   width: 100%;
+  @include mobile {
+    height: 100%;
+  }
   .footer__pattern {
     background: url("../images/bg-pattern-footer-desktop.svg") no-repeat;
     height: 100%;
     position: absolute;
     width: 100%;
     z-index: 1;
+    @include mobile {
+      background: url("../images/bg-pattern-footer-mobile.svg") no-repeat;
+    }
   }
   .footer__top {
     padding-top: 25px;
@@ -356,13 +388,22 @@ p {
     height: 100px;
     width: 100%;
     z-index: 10;
+    @include mobile {
+      height: 175px;
+    }
     .container {
       align-items: center;
       border-bottom: 1px solid hsla(273, 4%, 51%, 0.25);
       display: flex;
+      @include mobile {
+        flex-direction: column;
+      }
       .footer__top-logo {
         margin-right: auto;
         z-index: 5;
+        @include mobile {
+          margin: 50px 0 25px;
+        }
       }
       .footer__top-social {
         display: flex;
@@ -378,10 +419,21 @@ p {
     margin-top: 40px;
     .container {
       display: flex;
+      @include mobile {
+        flex-direction: column;
+      }
     }
     &-vertList {
       width: 25%;
       z-index: 5;
+      @include mobile {
+        margin-bottom: 25px;
+        text-align: center;
+        width: 100%;
+        &:last-child {
+          padding-bottom: 50px;
+        }
+      }
       h5,
       li {
         @include font($Karla, 700);
