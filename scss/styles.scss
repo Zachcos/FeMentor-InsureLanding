@@ -40,6 +40,9 @@ $bp_small: 375px;
   margin: 0 auto;
   max-width: $bp_large;
   width: 77%;
+  @include mobile {
+    width: 90%;
+  }
 }
 
 .button__light,
@@ -115,6 +118,9 @@ p {
     list-style: none;
     width: 40%;
     min-width: 425px;
+    @include mobile {
+      display: none;
+    }
     li {
       @include font($Karla, 700);
       color: $darkGreyishViolet;
@@ -125,6 +131,13 @@ p {
       &:hover {
         color: $veryDarkViolet;
       }
+    }
+  }
+
+  .nav__mobileBtn {
+    display: none;
+    @include mobile {
+      display: block;
     }
   }
 }

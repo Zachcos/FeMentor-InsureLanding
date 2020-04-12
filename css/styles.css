@@ -137,6 +137,11 @@ table {
   max-width: 1440px;
   width: 77%;
 }
+@media screen and (max-width: 375px) {
+  .container {
+    width: 90%;
+  }
+}
 
 .button__light,
 .button__dark {
@@ -216,6 +221,11 @@ p {
   width: 40%;
   min-width: 425px;
 }
+@media screen and (max-width: 375px) {
+  #topBar nav {
+    display: none;
+  }
+}
 #topBar nav li {
   font-family: "Karla", sans-serif;
   font-weight: 700;
@@ -227,6 +237,14 @@ p {
 }
 #topBar nav li:hover {
   color: #2b272f;
+}
+#topBar .nav__mobileBtn {
+  display: none;
+}
+@media screen and (max-width: 375px) {
+  #topBar .nav__mobileBtn {
+    display: block;
+  }
 }
 
 #cta {
