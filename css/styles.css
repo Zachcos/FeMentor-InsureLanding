@@ -654,6 +654,12 @@ p {
     width: 70%;
     margin: 0 auto;
   }
+  #mobile-nav nav li:hover {
+    text-decoration: underline;
+  }
+  #mobile-nav nav li.button__light:hover {
+    text-decoration: none;
+  }
   #mobile-nav .pattern__mobileNav {
     position: relative;
     background: url("../images/bg-pattern-mobile-nav.svg") no-repeat bottom;

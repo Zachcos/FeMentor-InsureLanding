@@ -487,6 +487,12 @@ p {
           width: 70%;
           margin: 0 auto;
         }
+        &:hover {
+          text-decoration: underline;
+        }
+        &.button__light:hover {
+          text-decoration: none;
+        }
       }
     }
     .pattern__mobileNav {
