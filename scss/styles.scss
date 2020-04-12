@@ -18,6 +18,12 @@ $bp_small: 375px;
   font-weight: $weight;
 }
 
+@mixin mobile {
+  @media screen and (max-width: $bp_small) {
+    @content;
+  }
+}
+
 @mixin accent($color) {
   &:before {
     background: $color;
