@@ -228,7 +228,7 @@ p {
   margin-right: auto;
   width: 20%;
 }
-.topBar nav {
+.topBar nav ul {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -237,11 +237,11 @@ p {
   min-width: 425px;
 }
 @media screen and (max-width: 390px) {
-  .topBar nav {
+  .topBar nav ul {
     display: none;
   }
 }
-.topBar nav li {
+.topBar nav ul li {
   font-family: "Karla", sans-serif;
   font-weight: 700;
   color: #837d87;
@@ -250,7 +250,7 @@ p {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-.topBar nav li:hover {
+.topBar nav ul li:hover {
   color: #2b272f;
 }
 .topBar .nav__mobileBtn {
