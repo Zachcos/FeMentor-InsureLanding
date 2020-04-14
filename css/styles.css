@@ -618,6 +618,9 @@ p {
   line-height: 1.85rem;
   color: #2d2640;
 }
+#footer .footer__bottom-vertList li:first-child:hover {
+  text-decoration: none;
+}
 #footer .footer__bottom-vertList li:hover {
   text-decoration: underline;
 }

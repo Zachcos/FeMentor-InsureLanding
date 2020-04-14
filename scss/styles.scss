@@ -452,6 +452,9 @@ p {
         line-height: 1.85rem;
         color: $darkViolet;
       }
+      li:first-child:hover {
+        text-decoration: none;
+      }
       li:hover {
         text-decoration: underline;
       }
