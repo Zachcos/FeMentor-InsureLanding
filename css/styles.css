@@ -212,7 +212,7 @@ p {
   font-weight: 400;
 }
 
-#topBar {
+.topBar {
   background: #fff;
   height: 80px;
   margin: 0;
@@ -220,15 +220,15 @@ p {
   position: relative;
   z-index: 50;
 }
-#topBar .container {
+.topBar .container {
   align-items: center;
   display: flex;
 }
-#topBar .imgContainer {
+.topBar .imgContainer {
   margin-right: auto;
   width: 20%;
 }
-#topBar nav {
+.topBar nav {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -237,11 +237,11 @@ p {
   min-width: 425px;
 }
 @media screen and (max-width: 390px) {
-  #topBar nav {
+  .topBar nav {
     display: none;
   }
 }
-#topBar nav li {
+.topBar nav li {
   font-family: "Karla", sans-serif;
   font-weight: 700;
   color: #837d87;
@@ -250,14 +250,14 @@ p {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
-#topBar nav li:hover {
+.topBar nav li:hover {
   color: #2b272f;
 }
-#topBar .nav__mobileBtn {
+.topBar .nav__mobileBtn {
   display: none;
 }
 @media screen and (max-width: 390px) {
-  #topBar .nav__mobileBtn {
+  .topBar .nav__mobileBtn {
     display: block;
   }
 }
@@ -622,7 +622,7 @@ p {
   padding-bottom: 25px;
 }
 
-#mobile-nav #topBar {
+#mobile-nav .topBar {
   position: relative;
   z-index: 10;
 }

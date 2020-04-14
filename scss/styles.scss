@@ -107,7 +107,7 @@ p {
   @include font($Karla, 400);
 }
 
-#topBar {
+.topBar {
   background: #fff;
   height: 80px;
   margin: 0;
@@ -460,7 +460,7 @@ p {
 }
 
 #mobile-nav {
-  #topBar {
+  .topBar {
     position: relative;
     z-index: 10;
   }
